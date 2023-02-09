@@ -1,1 +1,1 @@
-wget https://raw.githubusercontent.com/universoflix/painel/main/api-sshplus-install.sh && chmod 777 api-sshplus-install.sh && ./api-sshplus-install.sh
+wget https://raw.githubusercontent.com/universoflix/php/main/remover-e-instalar-php.sh && chmod 777 remover-e-instalar-php.sh && ./remover-e-instalar-php.sh
