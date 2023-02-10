@@ -55,29 +55,3 @@ Adicione esse comando no final da lista dos comando abaixo:
 	nano /etc/php/7.2/cli/php.ini
 	
 	
-	
-	
-	
-	
-INSTLANDO SUBDOMINIO
-	
-Entrando na pasta padrão dos arquivos do apache
-
-	cd /var/www
-
-Criando pasta do subdomínio
-
-	sudo mkdir pagamento
-
-Mudando o dono do diretório para meu usuário e para o grupo padrão do apache
-
-	sudo chown -R root:www-data pagamento
-
-Entrando na pasta padrão dos sites do apache
-
-	cd /etc/apache2/sites-available
-
-	wget https://raw.githubusercontent.com/universoflix/php/main/installphp.sh && chmod 777 installphp.sh && ./installphp.sh
-
-
-
