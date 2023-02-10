@@ -12,9 +12,13 @@ tar xfz ioncube_loaders_lin_x86-64.tar.gz
 
 cp /tmp/ioncube/ioncube_loader_lin_7.2.so /usr/lib/php/20170718
 
-
-
-nano /etc/php/7.2/apache2/php.ini
-nano /etc/php/7.2/cli/php.ini
+ADICIONAR ESSE COMANDO NO FINAL DOS COMANDOS ABAIXO3
 
 zend_extension = /usr/lib/php/20170718/ioncube_loader_lin_7.2.so
+
+nano /etc/php/7.2/apache2/php.ini
+
+nano /etc/php/7.2/cli/php.ini
+
+
+
