@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
 sudo apt-get purge php7.*
 sudo apt-get purge php8.*
 sudo apt-get autoclean
