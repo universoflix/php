@@ -3,7 +3,7 @@ echo "\033[1;36mRemovendo todas as versões do php7, seja php 7.0 ou php 7.1 etc
 sudo apt-get purge php7.* -y
 sudo apt-get purge php8.* -y
 sudo apt-get autoclean -y
-sudo apt-get autoremove
+sudo apt-get autoremove -y
 echo "\033[1;36mInstalando o PHP novamente \033[0m"
 sudo add-apt-repository ppa:ondrej/php -y
 sudo apt-get update -y
