@@ -35,7 +35,7 @@ Instale toda a extensão necessária, para que ele não cometa nenhum erro no fu
 	sudo apt install php7.2-common php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-curl php7.2-gd php7.2-imagick php7.2-cli php7.2-dev php7.2-imap php7.2-mbstring php7.2-opcache php7.2-soap php7.2-zip php7.2-intl -y
 
 
-Instalando o ioncube no php7.2
+                    Instalando o ioncube no php7.2
 
 	cd /tmp
 
@@ -57,13 +57,17 @@ Adicione esse comando no final da lista dos comando abaixo:
 	
 	
 	
+	
+	
+	INSTLANDO SUBDOMINIO
+	
 Entrando na pasta padrão dos arquivos do apache
 
 	cd /var/www
 
 Criando pasta do subdomínio
 
-	sudo mkdir subdominio
+	sudo mkdir pagamento
 
 Mudando o dono do diretório para meu usuário e para o grupo padrão do apache
 
