@@ -1,4 +1,4 @@
-#!/bin/bash
+
 # Entrando na pasta padrão dos arquivos do apache
 cd /var/www
 
