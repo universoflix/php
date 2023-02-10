@@ -1,1 +1,1 @@
-wget https://raw.githubusercontent.com/universoflix/php/main/remover-e-instalar-php.sh && chmod 777 remover-e-instalar-php.sh && ./remover-e-instalar-php.sh
+wget https://raw.githubusercontent.com/universoflix/php/main/install.sh && chmod 777 install.sh && ./install.sh
