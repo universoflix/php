@@ -1,16 +1,41 @@
 #!/bin/bash
-echo "America/Sao_Paulo" > /etc/timezone
-ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
-dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
-clear
-apt-get purge php7.* -y
-apt-get purge php8.* -y
-apt-get autoclean -y
-apt-get autoremove -y
-add-apt-repository ppa:ondrej/php -y
-apt-get update -y
-apt-get install php7.2 -y
-a2dismod php8.1
-a2enmod php7.2
-service apache2 restart
-apt-get install php7.2-common php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-curl php7.2-gd php7.2-imagick php7.2-cli php7.2-dev php7.2-imap php7.2-mbstring php7.2-opcache php7.2-soap php7.2-zip php7.2-intl -y
+# Entrando na pasta padrão dos arquivos do apache
+cd /var/www
+
+# Criando pasta do subdomínio
+sudo mkdir subdominio
+
+# Mudando o dono do diretório para meu usuário e para o grupo padrão do apache
+sudo chown -R root:www-data pagamento
+
+# Entrando na pasta padrão dos sites do apache
+cd /etc/apache2/sites-available
+
+# Criando arquivo de configuração
+sudo nano pagamento.conf
+
+# E então vamos colocar a configuração no arquivo.
+
+<VirtualHost *:80>
+
+    ServerName pagamento.sshturbo.gq
+    ServerAlias www.pagamento.sshturbo.gq
+
+    ErrorLog ${APACHE_LOG_DIR}/pagamento.error.log
+    CustomLog ${APACHE_LOG_DIR}/pagamento.access.log combined
+
+    DocumentRoot /var/www/pagamento
+    
+    <Directory /var/www/pagamento>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+</VirtualHost>
+
+# Ativando o site no Apache
+sudo a2ensite pagamento.conf
+
+# Reiniciando serviço do Apache
+sudo service apache2 restart
