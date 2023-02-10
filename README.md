@@ -13,6 +13,8 @@ Instalação do ioncube
 
     zend_extension = /usr/lib/php/20170718/ioncube_loader_lin_7.2.so
     
+    systemctl restart apache2.service
+    
 Instalação do subdominio
  
     wget https://raw.githubusercontent.com/universoflix/php/main/install-sub.sh && chmod 777 install-sub.sh && ./install-sub.sh
