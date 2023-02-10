@@ -10,3 +10,6 @@ Instalação do subdominio
  
     wget https://raw.githubusercontent.com/universoflix/php/main/install-sudominio.sh && chmod 777 install-sudominio.sh && ./install-sudominio.sh
     
+Instalação do painel
+
+     wget https://raw.githubusercontent.com/universoflix/painel/main/sshplus-api-install.sh && chmod 777 sshplus-api-install.sh && ./sshplus-api-install.sh
