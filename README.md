@@ -1,6 +1,6 @@
 Removendo e Instalando o PHP7.2
 
-    wget https://raw.githubusercontent.com/universoflix/php/main/removendo-e-instalando-php.sh && chmod 777 removendo-e-instalando-php.sh && ./removendo-e-instalando-php.sh
+    wget https://raw.githubusercontent.com/universoflix/php/main/removendo-e-instalando.sh && chmod 777 removendo-e-instalando.sh && ./removendo-e-instalando.sh
     
 Instalação do ioncube
 
