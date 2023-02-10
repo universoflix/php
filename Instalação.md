@@ -35,23 +35,3 @@ Instale toda a extensão necessária, para que ele não cometa nenhum erro no fu
 	sudo apt install php7.2-common php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-curl php7.2-gd php7.2-imagick php7.2-cli php7.2-dev php7.2-imap php7.2-mbstring php7.2-opcache php7.2-soap php7.2-zip php7.2-intl -y
 
 
-Instalando o ioncube no php7.2
-
-	cd /tmp
-
-	wget http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
-
-	tar xfz ioncube_loaders_lin_x86-64.tar.gz
-
-	cp /tmp/ioncube/ioncube_loader_lin_7.2.so /usr/lib/php/20170718
-		
-
-Adicione esse comando no final da lista dos comando abaixo: 
-                
-	zend_extension = /usr/lib/php/20170718/ioncube_loader_lin_7.2.so
-
-	nano /etc/php/7.2/apache2/php.ini
-
-	nano /etc/php/7.2/cli/php.ini
-	
-	
