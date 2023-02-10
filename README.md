@@ -2,7 +2,7 @@ apt-get update -y && apt-get upgrade -y && wget https://raw.githubusercontent.co
 
 
 
-INSTALAR O IONCUBE NO PHP7.2
+#INSTALAR O IONCUBE NO PHP7.2
 
 cd /tmp
 
@@ -12,7 +12,7 @@ tar xfz ioncube_loaders_lin_x86-64.tar.gz
 
 cp /tmp/ioncube/ioncube_loader_lin_7.2.so /usr/lib/php/20170718
 
-ADICIONAR ESSE COMANDO NO FINAL DOS COMANDOS ABAIXO3
+#ADICIONAR ESSE COMANDO NO FINAL DOS COMANDOS ABAIXO
 
 zend_extension = /usr/lib/php/20170718/ioncube_loader_lin_7.2.so
 
