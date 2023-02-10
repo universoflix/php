@@ -4,7 +4,7 @@ Removendo e Instalando o PHP7.2
     
 Instalação do ioncube
 
-    wget https://raw.githubusercontent.com/universoflix/php/main/install-ioncub.sh && chmod 777 install-ioncub.sh && ./install-ioncub.sh    
+    wget https://raw.githubusercontent.com/universoflix/php/main/install-ion.sh && chmod 777 install-ion.sh && ./install-ion.sh    
     
 Instalação do subdominio
  
