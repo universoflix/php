@@ -17,5 +17,5 @@ Instalação do ioncube
     
 Instalação do subdominio
  
-    wget https://raw.githubusercontent.com/universoflix/php/main/install-sub.sh && chmod 777 install-sub.sh && ./install-sub.sh
+    wget https://raw.githubusercontent.com/universoflix/php/main/install-subdominio.sh && chmod 777 install-subdominio.sh && ./install-subdominio.sh
     
