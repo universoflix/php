@@ -4,7 +4,14 @@ Removendo e Instalando o PHP7.2
     
 Instalação do ioncube
 
-    wget https://raw.githubusercontent.com/universoflix/php/main/install-ion.sh && chmod 777 install-ion.sh && ./install-ion.sh    
+    wget https://raw.githubusercontent.com/universoflix/php/main/install-ion.sh && chmod 777 install-ion.sh && ./install-ion.sh  
+    
+    Entre em cada pasta e adicione o comando no final.
+    
+    nano /etc/php/7.2/apache2/php.ini
+    nano /etc/php/7.2/cli/php.ini
+
+    zend_extension = /usr/lib/php/20170718/ioncube_loader_lin_7.2.so
     
 Instalação do subdominio
  
