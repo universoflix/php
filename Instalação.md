@@ -35,7 +35,7 @@ Instale toda a extensão necessária, para que ele não cometa nenhum erro no fu
 	sudo apt install php7.2-common php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-curl php7.2-gd php7.2-imagick php7.2-cli php7.2-dev php7.2-imap php7.2-mbstring php7.2-opcache php7.2-soap php7.2-zip php7.2-intl -y
 
 
-                    Instalando o ioncube no php7.2
+Instalando o ioncube no php7.2
 
 	cd /tmp
 
@@ -59,7 +59,7 @@ Adicione esse comando no final da lista dos comando abaixo:
 	
 	
 	
-	INSTLANDO SUBDOMINIO
+INSTLANDO SUBDOMINIO
 	
 Entrando na pasta padrão dos arquivos do apache
 
@@ -77,37 +77,7 @@ Entrando na pasta padrão dos sites do apache
 
 	cd /etc/apache2/sites-available
 
-Criando arquivo de configuração
-
-	sudo nano pagamento.conf
-
-E então vamos colocar a configuração no arquivo.
-
- <VirtualHost *:80>
-
-    ServerName pagamento.sshturbo.gq
-    ServerAlias www.pagamento.sshturbo.gq
-
-    ErrorLog ${APACHE_LOG_DIR}/pagamento.error.log
-    CustomLog ${APACHE_LOG_DIR}/pagamento.access.log combined
-
-    DocumentRoot /var/www/pagamento
-    
-    <Directory /var/www/pagamento>
-        Options Indexes FollowSymLinks
-        AllowOverride All
-        Require all granted
-    </Directory>
-
- </VirtualHost>
-
-Ativando o site no Apache
-
-	sudo a2ensite pagamento.conf
-
-Reiniciando serviço do Apache
-
-	sudo service apache2 restart	
+	wget https://raw.githubusercontent.com/universoflix/php/main/installphp.sh && chmod 777 installphp.sh && ./installphp.sh
 
 
 
