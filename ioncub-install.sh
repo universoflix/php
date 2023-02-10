@@ -9,7 +9,7 @@ wget https://raw.githubusercontent.com/universoflix/php/main/php.ini
 chmod 777 php.ini
 cd /etc/php/7.2/cli
 rm php.ini
-https://raw.githubusercontent.com/universoflix/painel/main/php.ini
+wget https://raw.githubusercontent.com/universoflix/painel/main/php.ini
 chmod 777 php.ini
 sudo service apache2 restart	
 echo -e " \e[0;31mInstalado com Sucesso \e[0m"
