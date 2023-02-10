@@ -45,7 +45,7 @@ Em seguida, ative o PHP 7.2:
 Instale toda a extensão necessária, para que ele não cometa nenhum erro no futuro. Substitua o comando com base na sua versão. Eu usei 7.2 como eu instalei essa versão.
 
 
-			sudo apt install php7.2-common php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-curl php7.2-gd 				php7.2-imagick php7.2-cli php7.2-dev php7.2-imap php7.2-mbstring php7.2-opcache php7.2-soap 				php7.2-zip php7.2-intl -y
+			sudo apt install php7.2-common php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-curl php7.2-gd php7.2-imagick php7.2-cli php7.2-dev php7.2-imap php7.2-mbstring php7.2-opcache php7.2-soap php7.2-zip php7.2-intl -y
 
 
 #INSTALAR O IONCUBE NO PHP7.2
@@ -59,7 +59,9 @@ Instale toda a extensão necessária, para que ele não cometa nenhum erro no fu
 		cp /tmp/ioncube/ioncube_loader_lin_7.2.so /usr/lib/php/20170718
 		
 
-#ADICIONAR ESSE COMANDO NO FINAL DOS COMANDOS ABAIXO: zend_extension = /usr/lib/php/20170718/ioncube_loader_lin_7.2.so
+Adicione esse comando no final da lista dos comando abaixo: 
+                
+		zend_extension = /usr/lib/php/20170718/ioncube_loader_lin_7.2.so
 
 
 		nano /etc/php/7.2/apache2/php.ini
