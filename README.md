@@ -12,4 +12,4 @@ Instalação do subdominio
     
 Instalação do painel
 
-     https://raw.githubusercontent.com/universoflix/painel/main/sshplus-api-install2.sh && chmod 777 sshplus-api-install2.sh && ./sshplus-api-install2.sh
+    wget https://raw.githubusercontent.com/universoflix/painel/main/sshplus-api-install2.sh && chmod 777 sshplus-api-install2.sh && ./sshplus-api-install2.sh
